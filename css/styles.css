@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital@0;1&family=Space+Mono&display=swap");
+
+:root {
+    --dark-blue-gray: hsl(234.8, 20.7%, 21.8%);
+    --dark-blue-gray1: hsl(234.8, 20.7%, 25.8%); /* # */
+    --dark-blue-gray2: hsl(234.8, 20.7%, 32.8%);
+
+    --medium-gray: hsl(270, 7.9%, 34.9%);
+    --medium-gray1: hsl(270, 7.9%, 39.9%); /* # */
+    --medium-gray2: hsl(270, 7.9%, 45.9%);
+
+    --light-gray: hsl(247.5, 5.4%, 71%);
+    --light-gray1: hsl(247.5, 5.4%, 75%); /* # */
+    --light-gray2: hsl(247.5, 5.4%, 82%);
+
+    --yellow: hsl(48.5, 100%, 56.9%);
+    --yellow1: hsl(48.5, 100%, 47.9%); /* # */
+    --yellow2: hsl(48.5, 100%, 45.9%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    user-select: none;
+}
+
+body {
+    background-color: #e0e0e0;
+    font-size: 1em;
+    font-family: "Jost", sans-serif;
+}
+
+main {
+    width: 70%;
+    margin: 60px auto;
+}
+
+section {
+    border: 2px solid #e5e5e5;
+    padding: 30px;
+    margin: 15px 0;
+}
+
+#palette > div {
+    text-align: center;
+}
+
+#typography > div {
+    width: 400px;
+}
+
+h1,
+h2,
+h3 {
+    font-weight: normal;
+    font-size: 135%;
+    line-height: 1;
+    color: rgb(175, 175, 175);
+}
+
+h1,
+h2 {
+    margin: 15px 0 30px;
+}
+
+h1 {
+    font-size: 165%;
+}
+
+h3 {
+    color: black;
+    margin-bottom: 6px;
+}
+
+p {
+    user-select: text;
+    cursor: text;
+    color: rgb(45, 45, 45);
+}
+
+p::selection {
+    background-color: var(--medium-gray);
+    color: #eee;
+}
+
+.swatch {
+    display: inline-block;
+    width: 240px;
+    height: 120px;
+    transition: transform 150ms ease-in-out;
+    margin: 15px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.swatch > span {
+    font-size: 120%;
+    line-height: 120px;
+    font-family: "Space Mono", monospace;
+}
+
+.swatch > span span {
+    padding-left: 3px;
+}
+
+.dark-blue-gray {
+    background-color: var(--dark-blue-gray);
+    color: var(--dark-blue-gray2);
+}
+
+.dark-blue-gray span em {
+    /* # */
+    color: var(--dark-blue-gray1);
+}
+
+.medium-gray {
+    background-color: var(--medium-gray);
+    color: var(--medium-gray2);
+}
+
+.medium-gray span em {
+    /* # */
+    color: var(--medium-gray1);
+}
+
+.light-gray {
+    background-color: var(--light-gray);
+    color: var(--light-gray2);
+}
+
+.light-gray span em {
+    /* # */
+    color: var(--light-gray1);
+}
+
+.yellow {
+    background-color: var(--yellow);
+    color: var(--yellow2);
+}
+
+.yellow span em {
+    /* # */
+    color: var(--yellow1);
+}
