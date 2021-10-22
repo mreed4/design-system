@@ -12,6 +12,7 @@
     --light-gray: hsl(247.5, 5.4%, 71%);
     --light-gray1: hsl(247.5, 5.4%, 75%); /* # */
     --light-gray2: hsl(247.5, 5.4%, 82%);
+    --light-gray3: hsl(247.5, 5.4%, 40%);
 
     --yellow: hsl(48.5, 100%, 56.9%);
     --yellow1: hsl(48.5, 100%, 47.9%); /* # */
@@ -41,21 +42,32 @@ section {
     margin: 15px 0;
 }
 
-#palette > div {
+section > div {
     text-align: center;
 }
 
-#typography > div {
-    width: 400px;
+#typography > div > div {
+    /* Font "cards" */
+    width: 350px;
+    display: inline-block;
+    text-align: left;
+    padding: 0 30px;
+    vertical-align: top;
+}
+
+#typography > div div div {
+    /* Font styles (bold italic, etc.) */
+    margin-top: 30px;
 }
 
 h1,
 h2,
-h3 {
+h3,
+h4 {
     font-weight: normal;
-    font-size: 135%;
     line-height: 1;
-    color: rgb(175, 175, 175);
+    color: var(--light-gray);
+    font-size: 125%;
 }
 
 h1,
@@ -72,10 +84,16 @@ h3 {
     margin-bottom: 6px;
 }
 
+h4 {
+    font-size: 90%;
+    margin: 15px 0 3px;
+    color: var(--light-gray3);
+}
+
 p {
     user-select: text;
     cursor: text;
-    color: rgb(45, 45, 45);
+    color: hsl(0, 0%, 17.6%);
 }
 
 p::selection {
@@ -141,4 +159,28 @@ p::selection {
 .yellow span em {
     /* # */
     color: var(--yellow1);
+}
+
+.bold {
+    font-weight: 700;
+}
+
+.italic {
+    font-style: italic;
+}
+
+#jost {
+    font-family: "Jost", sans-serif;
+}
+
+#space-mono {
+    font-family: "Space Mono", monospace;
+}
+
+#space-mono p {
+    font-size: 80%;
+}
+
+#space-mono h4 {
+    font-family: "Jost", sans-serif;
 }
