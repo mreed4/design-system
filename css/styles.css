@@ -96,6 +96,27 @@ p {
     color: hsl(0, 0%, 17.6%);
 }
 
+h2 span,
+h2 span a {
+    color: var(--light-gray2);
+    display: inline-block;
+}
+
+h2 span {
+    margin-left: 6px;
+    font-size: 70%;
+    vertical-align: middle;
+}
+
+h2 span a {
+    margin: 0 6px;
+    transition: color 150ms ease-in-out;
+}
+
+h2 span a:hover {
+    color: var(--yellow2);
+}
+
 p::selection {
     background-color: var(--medium-gray);
     color: #eee;
