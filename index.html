@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Title</title>
+        <title>Design System</title>
 
         <meta charset="utf-8" />
         <meta
             name="viewport"
-            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+            content="width=device-width, initial-scale=1, shrink-to-fit=yes"
         />
 
         <link rel="stylesheet" href="css/styles.css" />
@@ -17,15 +17,17 @@
 
     <body>
         <main>
-            <h1>Title</h1>
+            <h1>Design System</h1>
             <section id="palette">
                 <h2>
                     Color Palette
                     <span
-                        >[<a
+                        >[
+                        <a
                             href="https://colorhunt.co/palette/2c2e43595260b2b1b9ffd523"
                             >Source</a
-                        >]</span
+                        >
+                        ]</span
                     >
                 </h2>
                 <div>
@@ -45,8 +47,10 @@
             </section>
             <section id="typography">
                 <h2>
-                    Typography<span
-                        >[<a
+                    Typography
+                    <span
+                        >[
+                        <a
                             href="https://fonts.google.com/share?selection.family=Crimson%20Text:ital,wght@0,400;0,600;1,400;1,600%7CJost:ital@0;1%7CSpace%20Mono"
                             >Source</a
                         >]</span
@@ -167,12 +171,68 @@
                 <h2>Styles</h2>
                 <div>
                     <!-- Begin style guide -->
-                    <h1 class="guide">H1</h1>
-                    <h2 class="guide">H2</h2>
-                    <h3 class="guide">H3</h3>
-                    <h3 class="guide">H4</h3>
-                    <p>P</p>
-                    <a href="">A</a>
+                    <div class="style-group">
+                        <h1 class="guide">H1: Heading Level 1</h1>
+                        <span class="code-guide code-tab1">{</span>
+                        <span class="code-guide code-tab2">
+                            <span>font-family:</span>
+                            <span class="str">"Jost"</span>,
+                            <span>sans-serif;</span>
+                        </span>
+                        <span class="code-guide code-tab2">
+                            <span>font-size:</span>
+                            <span class="num">48px</span>;
+                            <span class="code-comment">/* 300% of 1em */</span>
+                        </span>
+                        <span class="code-guide code-tab2">
+                            <span>font-weight:</span>
+                            <span>normal;</span>
+                        </span>
+                        <span class="code-guide code-tab1">}</span>
+                    </div>
+                    <div class="style-group">
+                        <h2 class="guide">H2: Heading Level 2</h2>
+                        <h3 class="guide">H3: Heading Level 3</h3>
+                        <h4 class="guide">H4: Heading Level 4</h4>
+                        <span class="code-guide code-tab1">{</span>
+                        <span class="code-guide code-tab2">
+                            <span>font-family:</span>
+                            <span class="str">"Jost"</span>,
+                            <span>sans-serif;</span>
+                        </span>
+                        <span class="code-guide code-tab2">
+                            <span>font-size:</span>
+                            <span class="num">20px</span>;
+                            <span class="code-comment">/* 125% of 1em */</span>
+                        </span>
+                        <span class="code-guide code-tab2">
+                            <span>font-weight:</span>
+                            <span>normal;</span>
+                        </span>
+                        <span class="code-guide code-tab1">}</span>
+                    </div>
+                    <div class="style-group">
+                        <p class="guide">P: Paragraphs</p>
+                        <span class="code-guide code-tab1">{</span>
+                        <span class="code-guide code-tab2">
+                            <span>font-family:</span>
+                            <span class="str">"Crimson Text"</span>,
+                            <span>serif;</span>
+                        </span>
+                        <span class="code-guide code-tab2">
+                            <span>font-size:</span>
+                            <span class="num">17px</span>;
+                            <span class="code-comment">/* 109% of 1em */</span>
+                        </span>
+                        <span class="code-guide code-tab2">
+                            <span>line-height:</span>
+                            <span class="num">1.25</span>;
+                        </span>
+                        <span class="code-guide code-tab1">}</span>
+                    </div>
+                    <div class="style-group">
+                        <a class="guide" href="">Links</a>
+                    </div>
                 </div>
             </section>
         </main>

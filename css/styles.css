@@ -26,7 +26,7 @@
 }
 
 body {
-    background-color: #e0e0e0;
+    background-color: hsl(0, 0%, 87.8%);
     font-size: 1em;
     font-family: "Jost", sans-serif;
 }
@@ -37,7 +37,7 @@ main {
 }
 
 section {
-    border: 2px solid #e5e5e5;
+    border: 2px solid hsl(0, 0%, 89.8%);
     padding: 30px;
     margin: 15px 0;
 }
@@ -206,7 +206,7 @@ p::selection {
 
 #serif p {
     line-height: 1.25;
-    font-size: 109%;
+    font-size: 100%;
 }
 
 #serif h3 {
@@ -222,12 +222,55 @@ p::selection {
     font-family: "Jost", sans-serif;
 }
 
-#styles h1.guide,
-#styles h2.guide,
-#styles h3.guide,
-#styles h4.guide,
-#styles p.guide,
-#styles a.guide {
+#styles .guide {
     margin: 0;
     line-height: 1;
+}
+
+p.guide {
+    font-family: "Crimson Text", serif;
+}
+
+.style-group {
+    margin: 15px;
+    background-color: hsl(0, 0%, 85.8%);
+    width: 500px;
+    padding: 15px;
+    display: inline-block;
+    vertical-align: top;
+    text-align: left;
+    height: 140px;
+}
+
+.code-tab1,
+.code-tab2 {
+    font-family: "Space Mono", monospace;
+}
+
+.code-guide {
+    color: var(--light-gray);
+    display: block;
+    color: hsl(0, 0%, 17.6%);
+    font-size: 75%;
+}
+
+.code-guide .str {
+    color: green;
+}
+
+.code-guide .num {
+    color: deeppink;
+}
+
+.code-guide .code-comment {
+    color: var(--light-gray);
+    font-style: italic;
+}
+
+.code-tab1 {
+    padding-left: 1.25em;
+}
+
+.code-tab2 {
+    padding-left: 2.5em;
 }
