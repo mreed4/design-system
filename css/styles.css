@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Jost:ital@0;1&family=Space+Mono&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;1,400;1,600&family=Jost:ital@0;1&family=Space+Mono&display=swap");
 
 :root {
     --dark-blue-gray: hsl(234.8, 20.7%, 21.8%);
@@ -46,7 +46,7 @@ section > div {
     text-align: center;
 }
 
-#typography > div > div {
+.font-card {
     /* Font "cards" */
     width: 350px;
     display: inline-block;
@@ -76,7 +76,7 @@ h2 {
 }
 
 h1 {
-    font-size: 165%;
+    font-size: 300%;
 }
 
 h3 {
@@ -85,9 +85,7 @@ h3 {
 }
 
 h4 {
-    font-size: 90%;
-    margin: 15px 0 3px;
-    color: var(--light-gray3);
+    margin: 15px 0 6px;
 }
 
 p {
@@ -190,18 +188,32 @@ p::selection {
     font-style: italic;
 }
 
-#jost {
+#sans-serif {
     font-family: "Jost", sans-serif;
 }
 
-#space-mono {
+#monospace {
     font-family: "Space Mono", monospace;
 }
 
-#space-mono p {
+#monospace p {
     font-size: 80%;
 }
 
-#space-mono h4 {
+#serif {
+    font-family: "Crimson Text", serif;
+    font-size: 109%;
+}
+
+#serif p {
+    line-height: 1.25;
+}
+
+#serif .bold {
+    font-weight: 600;
+}
+
+#monospace h4,
+#serif h4 {
     font-family: "Jost", sans-serif;
 }
