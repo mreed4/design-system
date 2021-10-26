@@ -221,12 +221,12 @@ p::selection {
     font-family: "Jost", sans-serif;
 }
 
-#styles .guide {
+#styles .style-element {
     margin: 0;
     line-height: 1;
 }
 
-p.guide {
+p.style-element {
     font-family: "Crimson Text", serif;
 }
 
@@ -238,7 +238,6 @@ p.guide {
     display: inline-block;
     vertical-align: top;
     text-align: left;
-    height: 140px;
 }
 
 .code-block {
