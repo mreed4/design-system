@@ -125,9 +125,8 @@ p::selection {
     vertical-align: top;
 }
 
-#typography > div div div {
-    /* Font styles (bold italic, etc.) */
-    margin-top: 30px;
+.font-card > div:first-child {
+    height: 300px;
 }
 
 .swatch > span {
@@ -188,37 +187,37 @@ p::selection {
     font-style: italic;
 }
 
-#sans-serif {
+.sans-serif {
     font-family: "Jost", sans-serif;
 }
 
-#monospace {
+.monospace {
     font-family: "Space Mono", monospace;
 }
 
-#monospace p {
+.monospace p {
     font-size: 85%;
 }
 
-#serif {
+.serif {
     font-family: "Crimson Text", serif;
 }
 
-#serif p {
+.serif p {
     line-height: 1.25;
     font-size: 100%;
 }
 
-#serif h3 {
+.serif h3 {
     font-size: 135%;
 }
 
-#serif .bold {
+.serif .bold {
     font-weight: 600;
 }
 
-#monospace h4,
-#serif h4 {
+.monospace h4,
+.serif h4 {
     font-family: "Jost", sans-serif;
 }
 
@@ -240,6 +239,10 @@ p.guide {
     vertical-align: top;
     text-align: left;
     height: 140px;
+}
+
+.code-block {
+    margin-top: 15px;
 }
 
 .code-tab1,
