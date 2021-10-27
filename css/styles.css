@@ -65,11 +65,6 @@ h1 {
     font-size: 300%;
 }
 
-.font-card h3 {
-    color: black;
-    margin-bottom: 6px;
-}
-
 h4 {
     margin: 15px 0 6px;
 }
@@ -123,6 +118,11 @@ p::selection {
     text-align: left;
     padding: 0 30px;
     vertical-align: top;
+}
+
+.font-card h3 {
+    color: black;
+    margin-bottom: 6px;
 }
 
 .font-card > div:first-child {
